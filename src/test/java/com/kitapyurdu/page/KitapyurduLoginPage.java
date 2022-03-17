@@ -18,9 +18,9 @@ public class KitapyurduLoginPage{
     public void login(){
         methods.click(By.cssSelector(".menu-top-button.login"));
         methods.waitBySeconds(2);
-        methods.sendKeys(By.id("login-email"),"tramendous34@gmail.com");
+        methods.sendKeys(By.id("login-email"),"tra34q");
         methods.waitBySeconds(1);
-        methods.sendKeys(By.id("login-password"),"kitap3112666");
+        methods.sendKeys(By.id("login-password"),"ki66");
         methods.waitBySeconds(1);
         methods.click(By.cssSelector(".ky-btn.ky-btn-orange.w-100.ky-login-btn"));
         methods.waitBySeconds(2);

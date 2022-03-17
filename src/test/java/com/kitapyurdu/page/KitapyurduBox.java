@@ -13,15 +13,15 @@ public class KitapyurduBox {
         methods = new Methods();
 
         methods.scrollWithAction(By.cssSelector(".add-to-cart.btn-orange.btn-ripple"));
-        methods.waitBySeconds(2);
+        methods.isElementVisible(By.cssSelector(".add-to-cart.btn-orange.btn-ripple"));
         methods.click(By.cssSelector(".add-to-cart.btn-orange.btn-ripple"));
-        methods.waitBySeconds(2);
+        methods.isElementVisible(By.cssSelector(".add-to-cart.btn-orange.btn-ripple"));
         methods.scrollWithAction(By.xpath("//*[@id='header-top']/div/div[2]/ul/li[1]/div/ul/li/a"));
-        methods.waitBySeconds(2);
+        methods.isElementVisible(By.xpath("//*[@id='header-top']/div/div[2]/ul/li[1]/div/ul/li/a"));
         methods.click(By.xpath("//*[@id=\'header-top\']//ul/li[1]//ul/li//ul/li[1]/a"));
-        methods.waitBySeconds(2);
+        methods.isElementVisible(By.xpath("//*[@id=\'header-top\']//ul/li[1]//ul/li//ul/li[1]/a"));
         methods.click(By.xpath("(//*[@data-title='Favorilerimden Sil'])[3]"));
-        methods.waitBySeconds(2);
+        methods.isElementVisible(By.xpath("(//*[@data-title='Favorilerimden Sil'])[3]"));
         methods.click(By.xpath("//*[@id='cart-items']"));
         methods.waitBySeconds(2);
         methods.click(By.id("js-cart"));
